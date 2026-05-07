@@ -1,263 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eunice Kang | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eunice Kang</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f8f6f2;
-      color: #111;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    header {
-      padding: 80px 0 50px;
-    }
-
-    .hero {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .hero h1 {
-      font-size: 4rem;
-      font-weight: 700;
-      line-height: 1;
-    }
-
-    .hero p {
-      max-width: 600px;
-      font-size: 1.1rem;
-      color: #444;
-    }
-
-    .button-group {
-      display: flex;
-      gap: 15px;
-      margin-top: 10px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      padding: 12px 24px;
-      border-radius: 999px;
-      border: 1px solid #111;
-      transition: 0.3s ease;
-      font-size: 0.95rem;
-    }
-
-    .btn:hover {
-      background: #111;
-      color: white;
-    }
-
-    section {
-      padding: 70px 0;
-      border-top: 1px solid #ddd;
-    }
-
-    .section-title {
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 20px;
-      transition: 0.3s ease;
-      border: 1px solid #eee;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .card h3 {
-      margin-bottom: 10px;
-    }
-
-    .card p {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    footer {
-      padding: 60px 0;
-      text-align: center;
-      color: #666;
-      font-size: 0.9rem;
-    }
-
-    .highlight {
-      color: #b08d57;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.8rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <header class="container">
-    <div class="hero">
-      <p>HELLO — I'M</p>
+  <nav>
+    <div class="logo">EUNICE</div>
+
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <p>Creative Producer • Choreographer • Photographer</p>
 
       <h1>
-        Eunice Kang
+        Building movement,<br>
+        visuals & stories.
       </h1>
-
-      <p>
-        Dance educator, choreographer, creative producer, and multidisciplinary artist
-        passionate about movement, storytelling, photography, and building meaningful
-        creative experiences.
-      </p>
-
-      <div class="button-group">
-        <a href="#work" class="btn">View Work</a>
-        <a href="#contact" class="btn">Contact Me</a>
-      </div>
     </div>
-  </header>
 
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title">About</h2>
-
-      <p style="max-width: 750px;">
-        I’m a Singapore-based dance instructor and choreographer with experience in
-        teaching, producing workshops, performance, and creative direction.
-        My work blends contemporary movement, musical theatre influences,
-        visual storytelling, and community-building.
-        <br><br>
-        Beyond dance, I’m also exploring photography, web design,
-        branding, and creative entrepreneurship.
-      </p>
-    </div>
+    <img src="images/IMG_0841.jpeg" alt="">
   </section>
 
-  <section id="work">
-    <div class="container">
-      <h2 class="section-title">Selected Work</h2>
+  <section id="work" class="gallery">
 
-      <div class="grid">
-
-        <div class="card">
-          <h3>Dance Choreography</h3>
-          <p>
-            Competition choreography, concept pieces, stage performances,
-            and commercial dance projects.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Creative Production</h3>
-          <p>
-            Producing workshops, coordinating events, and bridging international
-            and Singapore dance communities.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Photography</h3>
-          <p>
-            Portraits, dance photography, travel storytelling,
-            and visual documentation.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Web & Branding</h3>
-          <p>
-            Exploring modern web design, online portfolios,
-            and personal branding through creative digital experiences.
-          </p>
-        </div>
-
-      </div>
+    <div class="gallery-item">
+      <img src="images/IMG_0841.jpeg" alt="">
     </div>
+
+    <div class="gallery-item tall">
+      <img src="images/IMG_0842.jpeg" alt="">
+    </div>
+
+    <div class="gallery-item">
+      <img src="images/IMG_0843.jpeg" alt="">
+    </div>
+
   </section>
 
-  <section id="experience">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
+  <section id="about" class="about">
 
-      <div class="grid">
+    <h2>About</h2>
 
-        <div class="card">
-          <h3>International Training</h3>
-          <p>
-            Yue Yin Dance Company Intensive (NYC), ODC classes in San Francisco,
-            and international dance collaborations.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Teaching & Mentorship</h3>
-          <p>
-            Teaching students across multiple levels and guiding award-winning
-            competition performances.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Creative Vision</h3>
-          <p>
-            Building future projects in dance education, workshops,
-            events, photography, and creative business ventures.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-
-      <p>Email: your@email.com</p>
-      <p>Instagram: @yourhandle</p>
-      <p>GitHub: github.com/yourusername</p>
-    </div>
-  </section>
-
-  <footer>
     <p>
-      Designed & built by <span class="highlight">Eunice Kang</span>
+      Singapore-based dance educator, choreographer,
+      creative producer, and multidisciplinary artist
+      exploring movement, photography, storytelling,
+      and modern visual design.
     </p>
-  </footer>
+
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2>Let’s connect</h2>
+
+    <p>your@email.com</p>
+
+  </section>
 
 </body>
 </html>
